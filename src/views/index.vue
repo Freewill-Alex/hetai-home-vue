@@ -43,7 +43,7 @@
                             <Icon type="md-people"/>
                             关于我们
                         </MenuItem>
-                        <MenuItem name="3">
+                        <MenuItem name="3" to="product">
                             <Icon type="ios-analytics"></Icon>
                             产品中心
                         </MenuItem>
