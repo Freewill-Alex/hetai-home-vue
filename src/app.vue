@@ -1,22 +1,36 @@
-<style scoped>
+<style scoped lang="less">
     @import 'styles/common.css';
+    .size{
+        width: 100%;
+        height: 100%;
+    }
+    html,body{
+    .size;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    #app {
+    .size;
+    }
 </style>
 <template>
-    <div>
-        <router-view></router-view>
+    <div id="app">
+        <router-view/>
     </div>
 </template>
 <script>
     export default {
-        data() {
-            return {}
-        },
-        mounted() {
-
-        },
-        beforeDestroy() {
-
-        },
-        methods: {}
+        name:'App'
+        // data() {
+        //     return {}
+        // },
+        // mounted() {
+        //
+        // },
+        // beforeDestroy() {
+        //
+        // },
+        // methods: {}
     }
 </script>
