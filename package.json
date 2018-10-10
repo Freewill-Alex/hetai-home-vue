@@ -32,7 +32,7 @@
     "file-loader": "^0.8.5",
     "html-loader": "^0.3.0",
     "html-webpack-plugin": "^2.28.0",
-    "iview-loader": "^1.2.1",
+    "iview-loader": "^1.2.2",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "style-loader": "^0.13.1",
