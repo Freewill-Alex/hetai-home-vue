@@ -1,5 +1,5 @@
 {
-  "name": "iview-project",
+  "name": "hetai-project",
   "version": "3.0.0",
   "description": "A base project with Vue.js2、Vue-Router、webpack2 and with iView3.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iview/iview-project.git"
+    "url": "git+https://github.com/freewill-gj/hetai-home-vue.git"
   },
   "author": "Aresn",
   "license": "MIT",
@@ -47,7 +47,7 @@
     "webpack-merge": "^3.0.0"
   },
   "bugs": {
-    "url": "https://github.com/iview/iview-project/issues"
+    "url": "https://github.com/freewill-gj/hetai-home-vue/issues"
   },
-  "homepage": "https://www.iviewui.com"
+  "homepage": "https://www.hetai.com"
 }
