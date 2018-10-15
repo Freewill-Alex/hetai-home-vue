@@ -3,3 +3,8 @@ node_modules/
 .project
 src/config/*.tmp
 /index_prod.html
+/hetai-home-vue.iml
+/.idea/
+/dist/
+/README.md
+/LICENSE
