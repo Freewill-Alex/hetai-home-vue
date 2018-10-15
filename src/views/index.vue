@@ -1,29 +1,51 @@
 <template>
     <div class="layout">
-        <Layout >
+        <Layout>
             <Header :style="{position: 'fixed', width: '100%'}">
                 <Menu mode="horizontal" theme="dark" according="true" active-name="1">
                     <div class="layout-logo">
                         <img src="../images/logo.png" height="100%">
                     </div>
                     <div class="layout-nav">
-                        <MenuItem name="1" to="home">
+                        <MenuItem name="1" to="/home">
                             <Icon type="md-home"/>
                             网站首页
                         </MenuItem>
-                        <MenuItem name="2" to="aboutus">
-                            <Icon type="md-people"/>
-                            关于贺泰
-                        </MenuItem>
-                        <MenuItem name="3" to="product">
-                            <Icon type="ios-analytics"/>
-                            产品中心
-                        </MenuItem>
-                        <MenuItem name="4" to="news">
-                            <Icon type="ios-paper"/>
-                            业务动态
-                        </MenuItem>
-                        <MenuItem name="5" to="link" >
+                        <!--<MenuItem name="2" to="aboutus">-->
+                        <!--<Icon type="md-people"/>-->
+                        <!--关于贺泰-->
+                        <!--</MenuItem>-->
+                        <Submenu name="2">
+                            <template slot="title">
+                                <Icon type="md-people"/>
+                                关于贺泰
+                            </template>
+                            <MenuItem name="2-1" to="/aboutus">公司概况</MenuItem>
+                            <MenuItem name="2-2">公司文化</MenuItem>
+                            <MenuItem name="2-3">品牌故事</MenuItem>
+                            <MenuItem name="2-3">资质证书</MenuItem>
+                        </Submenu>
+                        <Submenu name="3">
+                            <template slot="title">
+                                <Icon type="ios-analytics"/>
+                                产品中心
+                            </template>
+                            <MenuItem name="3-1" to="/product/qingfusuan">氢氟酸</MenuItem>
+                            <MenuItem name="3-2" to="/product/niaosuan">尿酸</MenuItem>
+                            <MenuItem name="3-3" to="/product/fuhuaqingan">氟化氢铵</MenuItem>
+                            <MenuItem name="3-4" to="/product/fuhuaan">氟化铵</MenuItem>
+                            </MenuGroup>
+                        </Submenu>
+                        <Submenu name="4">
+                            <template slot="title">
+                                <Icon type="ios-paper"/>
+                                新闻动态
+                            </template>
+                            <MenuItem name="4-1" to="/news/company">公司新闻</MenuItem>
+                            <MenuItem name="4-2" to="/news/industry">行业新闻</MenuItem>
+                            </MenuGroup>
+                        </Submenu>
+                        <MenuItem name="5" to="/link">
                             <Icon type="ios-call"/>
                             联系我们
                         </MenuItem>
@@ -31,7 +53,7 @@
                     </div>
                 </Menu>
             </Header>
-            <Content >
+            <Content>
                 <router-view></router-view>
             </Content>
             <Footer class="layout-footer-center">2011-2016 &copy; TalkingData</Footer>
@@ -77,7 +99,6 @@
     .layout-footer-center {
         text-align: center;
     }
-
 
 
 </style>
