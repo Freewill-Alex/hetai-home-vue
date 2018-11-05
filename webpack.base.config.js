@@ -24,6 +24,7 @@ module.exports = {
                                     fallback: 'vue-style-loader'
                                 }),
                                 css: ExtractTextPlugin.extract({
+                                    publicPath: './',
                                     use: ['css-loader', 'autoprefixer-loader', 'less-loader'],
                                     fallback: 'vue-style-loader'
                                 })

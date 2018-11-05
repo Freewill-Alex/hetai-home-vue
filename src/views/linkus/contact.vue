@@ -1,6 +1,6 @@
 <template>
 
-    <div :style="{'background-image': 'url(' + '../src/images/318625.jpg' + ')',backgroundRepeat:'no-repeat',backgroundSize:'cover',minHeight: '500px'}">  </div>
+    <div :style="{backgroundImage: 'url(../src/images/10.jpg)',backgroundRepeat:'no-repeat',backgroundSize:'cover',minHeight: '500px'}">  </div>
 </template>
 
 <script>
