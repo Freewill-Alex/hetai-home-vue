@@ -1,10 +1,9 @@
 <template>
     <div class="layout">
         <Layout>
-            <Header :style="{position: 'fixed', width: '100%'}">
-                <Menu mode="horizontal" theme="dark" according="true" active-name="1">
+                <Menu mode="horizontal" :theme="light" according="true" active-name="1">
                     <div class="layout-logo">
-                        <img src="../../static/images/logo.png" height="100%">
+                        <img src="../../static/images/logo.png"  >
                     </div>
                     <div class="layout-nav">
                         <MenuItem name="1" to="/home">
@@ -52,7 +51,6 @@
 
                     </div>
                 </Menu>
-            </Header>
             <Content>
                 <router-view></router-view>
             </Content>
@@ -80,7 +78,12 @@
         overflow: hidden;
 
     }
-
+    img {
+        border-style: none;
+        width: 230px;
+        height: 230px;
+        margin-top: -100px;
+    }
     .layout-logo {
         width: 100px;
         height: 30px;
