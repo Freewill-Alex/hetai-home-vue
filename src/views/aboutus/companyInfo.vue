@@ -1,6 +1,6 @@
 <template>
 
-    <div :style="{backgroundImage: 'url(../src/images/8.jpg)',backgroundRepeat:'no-repeat',backgroundSize:'cover',minHeight: '500px'}">
+    <div :style="{backgroundImage: 'url(./static/images/8.jpg)',backgroundRepeat:'no-repeat',backgroundSize:'cover',minHeight: '500px'}">
         {{msg}}</div>
 </template>
 

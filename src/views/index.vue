@@ -4,7 +4,7 @@
             <Header :style="{position: 'fixed', width: '100%'}">
                 <Menu mode="horizontal" theme="dark" according="true" active-name="1">
                     <div class="layout-logo">
-                        <img src="../images/logo.png" height="100%">
+                        <img src="../../static/images/logo.png" height="100%">
                     </div>
                     <div class="layout-nav">
                         <MenuItem name="1" to="/home">
